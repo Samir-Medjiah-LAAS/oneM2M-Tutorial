@@ -8,7 +8,7 @@ char* WIFI_PSWD = "FILL_THE_WIFI_PSWD"; // Configure here the PassWord of your W
 int WIFI_DELAY  = 100; //ms
 
 // oneM2M : CSE params
-String CSE_IP      = "X.X.X.X"; //""; //Configure here the IP Address of your oneM2M CSE
+String CSE_IP      = "X.X.X.X"; //Configure here the IP Address of your oneM2M CSE
 int   CSE_HTTP_PORT = 8080;
 String CSE_NAME    = "in-name";
 String CSE_M2M_ORIGIN  = "admin:admin";
