@@ -7470,3 +7470,338 @@ Response in Router= ResponsePrimitive [
  to=admin:admin
  from=/in-cse
  ]
+[2019-04-10 15:29:51,067 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2019-04-10 15:29:51,069 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2019-04-10 15:29:53,248 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2019-04-10 15:29:53,248 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2019-04-10 15:29:53,889 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2019-04-10 15:29:54,652 INFO] - org.eclipse.om2m.binding.coap.Activator 
+Register CoAP RestClientService..
+[2019-04-10 15:29:54,658 INFO] - org.eclipse.om2m.binding.coap.Activator 
+Starting CoAP server
+[2019-04-10 15:29:54,752 INFO] - org.eclipse.om2m.binding.coap.Activator 
+CseService opened
+[2019-04-10 15:29:54,756 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2019-04-10 15:29:54,769 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2019-04-10 15:29:55,286 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2019-04-10 15:29:55,293 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2019-04-10 15:29:55,295 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2019-04-10 15:29:55,296 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2019-04-10 15:29:55,297 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2019-04-10 15:29:55,297 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2019-04-10 15:29:55,305 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: coap
+[2019-04-10 15:29:55,306 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2019-04-10 15:29:55,312 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2019-04-10 15:29:55,314 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2019-04-10 15:29:55,456 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+HttpService discovered
+[2019-04-10 15:29:55,463 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator 
+Register /webpage http context
+[2019-04-10 15:29:58,955 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2019-04-10 15:29:58,995 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2019-04-10 15:29:58,996 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2019-04-10 15:29:58,999 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2019-04-10 15:29:59,005 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2019-04-10 15:29:59,019 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Create AccessControlPolicy resource
+[2019-04-10 15:29:59,070 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Create CSEBase resource
+[2019-04-10 15:29:59,109 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2019-04-10 15:29:59,132 INFO] - org.eclipse.om2m.binding.coap.Activator 
+CSE Service discovered
+[2019-04-10 15:29:59,136 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2019-04-10 15:29:59,136 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2019-04-10 15:29:59,786 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-10 15:29:59,789 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=in-name/LuminositySensor/DATA,
+ content={"m2m:cin": {"con":"1024"}}
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@5d191cb6,
+ ]
+[2019-04-10 15:29:59,791 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json;ty=4
+[2019-04-10 15:29:59,791 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2019-04-10 15:29:59,792 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: ty=4
+[2019-04-10 15:29:59,793 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: null
+[2019-04-10 15:29:59,793 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=in-name/LuminositySensor/DATA,
+ from=admin:admin,
+ resourceType=4,
+ content={"m2m:cin": {"con":"1024"}}
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@5d191cb6,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2019-04-10 15:29:59,798 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/LuminositySensor/DATA
+[2019-04-10 15:29:59,806 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:207)
+	at org.eclipse.om2m.binding.http.RestHttpServlet.service(RestHttpServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:76)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:360)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-10 15:29:59,818 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-10 15:29:59,820 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2019-04-10 15:30:04,798 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-10 15:30:04,799 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=in-name/LuminositySensor/DATA,
+ content={"m2m:cin": {"con":"1024"}}
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@28b883c4,
+ ]
+[2019-04-10 15:30:04,805 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json;ty=4
+[2019-04-10 15:30:04,806 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2019-04-10 15:30:04,807 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: ty=4
+[2019-04-10 15:30:04,807 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: null
+[2019-04-10 15:30:04,808 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=in-name/LuminositySensor/DATA,
+ from=admin:admin,
+ resourceType=4,
+ content={"m2m:cin": {"con":"1024"}}
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@28b883c4,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2019-04-10 15:30:04,810 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/LuminositySensor/DATA
+[2019-04-10 15:30:04,813 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:207)
+	at org.eclipse.om2m.binding.http.RestHttpServlet.service(RestHttpServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:76)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:360)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-10 15:30:04,821 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-10 15:30:04,823 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2019-04-10 15:30:09,784 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-10 15:30:09,785 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=in-name/LuminositySensor/DATA,
+ content={"m2m:cin": {"con":"1024"}}
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@150bbf4a,
+ ]
+[2019-04-10 15:30:09,791 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json;ty=4
+[2019-04-10 15:30:09,792 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2019-04-10 15:30:09,792 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: ty=4
+[2019-04-10 15:30:09,793 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: null
+[2019-04-10 15:30:09,794 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ to=in-name/LuminositySensor/DATA,
+ from=admin:admin,
+ resourceType=4,
+ content={"m2m:cin": {"con":"1024"}}
+,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@150bbf4a,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2019-04-10 15:30:09,796 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/in-name/LuminositySensor/DATA
+[2019-04-10 15:30:09,798 ERROR] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Resource not found
+org.eclipse.om2m.commons.exceptions.ResourceNotFoundException: Resource not found
+	at org.eclipse.om2m.core.router.Router.doRequest(Router.java:207)
+	at org.eclipse.om2m.binding.http.RestHttpServlet.service(RestHttpServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:76)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:360)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+[2019-04-10 15:30:09,799 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=4004
+ to=admin:admin
+ from=/in-cse
+ contentType=text/plain,
+ content (Only first 1000 caracters)=
+ Resource not found
+]
+[2019-04-10 15:30:09,807 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
+[2019-04-10 15:30:16,178 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2019-04-10 15:30:16,183 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@659b6988,
+ ]
+[2019-04-10 15:30:16,183 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/json
+[2019-04-10 15:30:16,184 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse,
+ from=admin:admin,
+ resultContent=5,
+ filterCriteria=org.eclipse.om2m.commons.resource.FilterCriteria@659b6988,
+ returnContentType=application/json,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5], lvl=[1]}]
+[2019-04-10 15:30:16,186 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse
+[2019-04-10 15:30:16,188 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2019-04-10 15:30:16,211 INFO] - org.eclipse.om2m.core.controller.Controller 
+Clear and close transaction
+[2019-04-10 15:30:16,254 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [
+ responseStatusCode=2000
+ to=admin:admin
+ from=/in-cse
+ contentType=application/json,
+ content (Only first 1000 caracters)=
+ {
+   "m2m:cb" : {
+      "rn" : "in-name",
+      "ty" : 5,
+      "ri" : "/in-cse",
+      "ct" : "20190410T152959",
+      "lt" : "20190410T152959",
+      "acpi" : [ "/in-cse/acp-341285257" ],
+      "cst" : 1,
+      "csi" : "in-cse",
+      "srt" : [ 1, 2, 3, 4, 5, 9, 14, 15, 16, 17, 23, 28 ],
+      "poa" : [ "http://127.0.0.1:8080/" ],
+      "ch" : [ {
+         "nm" : "acp_admin",
+         "typ" : 1,
+         "val" : "/in-cse/acp-341285257"
+      } ]
+   }
+}
+]
+[2019-04-10 15:30:16,256 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+send UTF8
