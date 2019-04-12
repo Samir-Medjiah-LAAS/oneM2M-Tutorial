@@ -1,3 +1,5 @@
+// Version 1.0
+
 #include <ESP8266WiFi.h>
 #include "Timer.h"
 
