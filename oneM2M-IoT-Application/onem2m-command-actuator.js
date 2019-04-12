@@ -1,3 +1,5 @@
+// Version 1.0
+
 var request = require('request');
 
 function createCIN(aeName, commandValue){
