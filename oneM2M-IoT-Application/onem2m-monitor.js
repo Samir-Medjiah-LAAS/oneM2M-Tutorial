@@ -9,6 +9,8 @@ var app = express();
 var monitorIP = "127.0.0.1";
 var monitorPort = 9999;
 
+var sensorThreshold = 0;
+
 var sensorToMonitor = "LuminositySensor";
 var actuatorToTrigger = "LedActuator";
 var isLedOn = false;
@@ -28,11 +30,11 @@ app.post('/', function (req, res) {
 		var sensorValue = req.body["m2m:sgn"]["m2m:nev"]["m2m:rep"]["m2m:cin"].con;
 		console.log("Receieved sensor value : " + sensorValue);
 
-		if(sensorValue>800 && isLedOn ){
+		if(sensorValue>sensorThreshold && isLedOn ){
 			console.log("High luminosity => Switch Off the led");
 			createCIN("[switchOff]");
 			isLedOn=false;
-		}else if(sensorValue<=800 && !isLedOn){
+		}else if(sensorValue<=sensorThreshold && !isLedOn){
 			console.log("Low luminosity => Switch On the led");
 			createCIN("[switchOn]")
 			isLedOn=true;

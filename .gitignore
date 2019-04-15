@@ -13,3 +13,6 @@ oneM2M-IoT-Platform/in-cse/configuration/org.eclipse.osgi/42/0/.cp/libs/eclipsel
 oneM2M-IoT-Platform/in-cse/configuration/org.eclipse.osgi/42/0/.cp/libs/h2-1.4.186.jar
 oneM2M-IoT-Platform/in-cse/database/indb.mv.db
 oneM2M-IoT-Platform/in-cse/database/indb.trace.db
+.vscode/ipch/2dd02de7c7fb67e5/mmap_address.bin
+oneM2M-IoT-Platform/in-cse/log.out
+.vscode/c_cpp_properties.json

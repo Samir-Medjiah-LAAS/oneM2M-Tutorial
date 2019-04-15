@@ -5,12 +5,12 @@
 
 ///////////////Parameters & Constants/////////////////
 // WIFI params
-char* WIFI_SSID = "FILL_THE_WIFI_SSID";    // Configure here the SSID of your WiFi Network
-char* WIFI_PSWD = "FILL_THE_WIFI_PSWD"; // Configure here the PassWord of your WiFi Network
+char* WIFI_SSID = "UCNET_1";    // Configure here the SSID of your WiFi Network
+char* WIFI_PSWD = ""; // Configure here the PassWord of your WiFi Network
 int WIFI_DELAY  = 100; //ms
 
 // oneM2M : CSE params
-String CSE_IP      = "X.X.X.X"; //Configure here the IP Address of your oneM2M CSE
+String CSE_IP      = "192.168.1.35"; //Configure here the IP Address of your oneM2M CSE
 int   CSE_HTTP_PORT = 8080;
 String CSE_NAME    = "in-name";
 String CSE_M2M_ORIGIN  = "admin:admin";
@@ -301,7 +301,7 @@ void task_HTTPServer() {
   //Parse the request and identify the requested command from the device
   //Request should be like "[operation_name]"
   start = request.indexOf("[");  
-  end = request.indexOf("]"); // first occurence of 
+  end = request.indexOf("]"); // first occurence fo 
   command = request.substring(start+1, end);
 #ifdef DEBUG
   Serial.println(String() + + "command = [" +  start + "," + end + "] -> " + command);
